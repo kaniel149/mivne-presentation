@@ -54,7 +54,7 @@ h3{font-size:1.5rem;font-weight:600}
 .mockup-dot{width:10px;height:10px;border-radius:50%}
 .mockup-body{padding:24px;min-height:280px;display:grid;gap:16px}
 .mock-stat{background:var(--bg);border-radius:12px;padding:20px;text-align:center}
-.mock-stat .val{font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--blue),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.mock-stat .val{font-size:2rem;font-weight:800;color:var(--blue)}
 .mock-stat .lbl{font-size:13px;color:var(--text2);margin-top:4px}
 .mock-chart{background:var(--bg);border-radius:12px;padding:20px;position:relative;overflow:hidden;min-height:120px}
 .mock-bar{height:8px;border-radius:4px;margin:8px 0}
@@ -90,7 +90,9 @@ h3{font-size:1.5rem;font-weight:600}
 .pricing-features li::before{content:'✓';color:var(--green);margin-left:12px;font-weight:700}
 
 /* Cover */
-.cover-title{background:linear-gradient(135deg,var(--text) 0%,var(--blue) 50%,var(--orange) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.cover-title{color:var(--text)}
+.mivne-logo{height:48px;margin:16px 0;filter:brightness(0) invert(1);opacity:.85}
+.mivne-logo-large{height:64px;filter:brightness(0) invert(1);opacity:.85}
 .cover-line{width:80px;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--orange));margin:24px 0}
 
 /* Benefits list */
@@ -137,9 +139,11 @@ h3{font-size:1.5rem;font-weight:600}
     <div class="fade-in">
       <span class="tag tag-blue">מצגת מותאמת אישית</span>
     </div>
-    <h1 class="fade-in fade-in-delay-1" style="margin-top:32px">
-      <span class="cover-title">Solar OS × מבנה נדל"ן</span>
-    </h1>
+    <div class="fade-in fade-in-delay-1" style="margin-top:32px;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap">
+      <img src="https://en.mivnegroup.co.il/wp-content/uploads/2024/04/101310-9_mivne_logo_eng.png" class="mivne-logo-large" alt="Mivne">
+      <span style="font-size:3rem;color:var(--text3);font-weight:300">×</span>
+      <h1 style="font-size:clamp(2.5rem,5vw,4rem)"><span class="cover-title">Solar OS</span></h1>
+    </div>
     <div class="cover-line fade-in fade-in-delay-2" style="margin:24px auto"></div>
     <p class="subtitle fade-in fade-in-delay-2" style="margin:0 auto;max-width:600px">
       מערכת ניהול תיק סולארי לחברות נדל"ן מניב
